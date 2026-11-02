@@ -1,0 +1,90 @@
+{
+  "generated": {
+    "profiles/ai-devsecops-engineer/skills/agent-folder-architect": {
+      "README.md": "2f81612fb405a24d4b99991249a6aa409cfb3f8799941ba059dedab7e1d1004a",
+      "SKILL.md": "40445b3a1353c37e5566d72c60c07f9f7289db04bb51579ff9b2d7f41bc5f77e",
+      "agents/openai.yaml": "ae055adb3a21b8918c9dcbea70ddc9f514f2bb83ba6582452d81c4f205e1e5f9",
+      "assets/PROMPT_DE_ACIONAMENTO.md": "6f91fb69f5b32f87d3bdfa1adcb0197dde1adc6b7a27482dda4099eaefdfa808",
+      "assets/blueprint-exemplo.json": "918dd58821a273a4690c9950794f40ed67f5bafae3c3e8cc9ccf9585b44b241e",
+      "assets/icon.svg": "51a6923974188748638a424aa59b42b6afad2d910f910a1d43bb13ee10f3ce26",
+      "references/adaptation-guide.md": "1e47d290be807f337fb036aba44aa088718b3aa3818e13b9f81e8dcd64aab676",
+      "references/blueprint-contract.md": "3e7065e0f9c0903d45cfdd5055f6a028fe7ceb7a0a6c02c114951a69f7537ba4",
+      "references/hermes-adapter.md": "50538c7632587a2a0dc12cacfde9ce1abfd36488f014862f386b1338f7cd055b",
+      "references/original-workflow.md": "cb486c8d5294c60b48c2e3f5fc5be4b7860034e78f59088b31eb97f4c1dd5541",
+      "references/quality-gates.md": "341c60a45884254b1c77022c0fa6749580c3a5cad46346eeb3cdbafa586769e7",
+      "scripts/architect.py": "bca6b9effe70c428d9c2e0692772db55a55d89c5f70a66e34bb922e5199d7a7f",
+      "scripts/safe_files.py": "7b83cb3e88c7881a261865dc5fc9c36fb661cfab1cbb2af2ad4b5df27cfc07ac",
+      "scripts/scaffold.py": "23fad57ec9fd08aa4aa569181d7bc44a25f7608effe45ebb72332b0cc25fecd4",
+      "scripts/validate_folder.py": "eea8061c3d34674e304fc23dcb42a46ab6ab0492188e4994cebcc6a62ead77d0",
+      "tests/test_scaffold.py": "f905664e9a529c07e4b24dec433a44af3d57f7ea90b7afd78729a5af1a751f32"
+    },
+    "profiles/ai-devsecops-engineer/skills/project-context-architect": {
+      "README.md": "81c11d4a7401e92a38940c59f6ed2fec13b8a4c1f39c27afe8ca4d5e134eb1c6",
+      "SKILL.md": "201701a9790dbf10266b03c577608ba088307747bc8f3cf111bfd36a6f3dbff7",
+      "agents/openai.yaml": "d9a8070a3ad3262959c0251e13b5b29723a861dc520d5c0a748dccc495c63112",
+      "assets/context-example.json": "8c4a80dcde71c8b6832920085feb45e5d0e1ec3eaccb2235c4b8baa233919f13",
+      "references/adoption.md": "d9084ddd913203fc35a7b922a1b088ef4a1817dda221a9dc9a2aef0d6b4b0bc2",
+      "references/context-contract.md": "8b1e282806c80e740e4e10e45b3f506c3ff507af8b1155dcc234876376f1a68c",
+      "scripts/context.py": "6cc084a1056e7b0d2b4aaaf145ef8905106d7d92577c905366ea32ccdd5b6052",
+      "scripts/safe_files.py": "7b83cb3e88c7881a261865dc5fc9c36fb661cfab1cbb2af2ad4b5df27cfc07ac"
+    },
+    "profiles/ai-engineer/skills/agent-folder-architect": {
+      "README.md": "2f81612fb405a24d4b99991249a6aa409cfb3f8799941ba059dedab7e1d1004a",
+      "SKILL.md": "40445b3a1353c37e5566d72c60c07f9f7289db04bb51579ff9b2d7f41bc5f77e",
+      "agents/openai.yaml": "ae055adb3a21b8918c9dcbea70ddc9f514f2bb83ba6582452d81c4f205e1e5f9",
+      "assets/PROMPT_DE_ACIONAMENTO.md": "6f91fb69f5b32f87d3bdfa1adcb0197dde1adc6b7a27482dda4099eaefdfa808",
+      "assets/blueprint-exemplo.json": "918dd58821a273a4690c9950794f40ed67f5bafae3c3e8cc9ccf9585b44b241e",
+      "assets/icon.svg": "51a6923974188748638a424aa59b42b6afad2d910f910a1d43bb13ee10f3ce26",
+      "references/adaptation-guide.md": "1e47d290be807f337fb036aba44aa088718b3aa3818e13b9f81e8dcd64aab676",
+      "references/blueprint-contract.md": "3e7065e0f9c0903d45cfdd5055f6a028fe7ceb7a0a6c02c114951a69f7537ba4",
+      "references/hermes-adapter.md": "50538c7632587a2a0dc12cacfde9ce1abfd36488f014862f386b1338f7cd055b",
+      "references/original-workflow.md": "cb486c8d5294c60b48c2e3f5fc5be4b7860034e78f59088b31eb97f4c1dd5541",
+      "references/quality-gates.md": "341c60a45884254b1c77022c0fa6749580c3a5cad46346eeb3cdbafa586769e7",
+      "scripts/architect.py": "bca6b9effe70c428d9c2e0692772db55a55d89c5f70a66e34bb922e5199d7a7f",
+      "scripts/safe_files.py": "7b83cb3e88c7881a261865dc5fc9c36fb661cfab1cbb2af2ad4b5df27cfc07ac",
+      "scripts/scaffold.py": "23fad57ec9fd08aa4aa569181d7bc44a25f7608effe45ebb72332b0cc25fecd4",
+      "scripts/validate_folder.py": "eea8061c3d34674e304fc23dcb42a46ab6ab0492188e4994cebcc6a62ead77d0",
+      "tests/test_scaffold.py": "f905664e9a529c07e4b24dec433a44af3d57f7ea90b7afd78729a5af1a751f32"
+    },
+    "profiles/ai-engineer/skills/project-context-architect": {
+      "README.md": "81c11d4a7401e92a38940c59f6ed2fec13b8a4c1f39c27afe8ca4d5e134eb1c6",
+      "SKILL.md": "201701a9790dbf10266b03c577608ba088307747bc8f3cf111bfd36a6f3dbff7",
+      "agents/openai.yaml": "d9a8070a3ad3262959c0251e13b5b29723a861dc520d5c0a748dccc495c63112",
+      "assets/context-example.json": "8c4a80dcde71c8b6832920085feb45e5d0e1ec3eaccb2235c4b8baa233919f13",
+      "references/adoption.md": "d9084ddd913203fc35a7b922a1b088ef4a1817dda221a9dc9a2aef0d6b4b0bc2",
+      "references/context-contract.md": "8b1e282806c80e740e4e10e45b3f506c3ff507af8b1155dcc234876376f1a68c",
+      "scripts/context.py": "6cc084a1056e7b0d2b4aaaf145ef8905106d7d92577c905366ea32ccdd5b6052",
+      "scripts/safe_files.py": "7b83cb3e88c7881a261865dc5fc9c36fb661cfab1cbb2af2ad4b5df27cfc07ac"
+    },
+    "profiles/software-engineer/skills/agent-folder-architect": {
+      "README.md": "2f81612fb405a24d4b99991249a6aa409cfb3f8799941ba059dedab7e1d1004a",
+      "SKILL.md": "40445b3a1353c37e5566d72c60c07f9f7289db04bb51579ff9b2d7f41bc5f77e",
+      "agents/openai.yaml": "ae055adb3a21b8918c9dcbea70ddc9f514f2bb83ba6582452d81c4f205e1e5f9",
+      "assets/PROMPT_DE_ACIONAMENTO.md": "6f91fb69f5b32f87d3bdfa1adcb0197dde1adc6b7a27482dda4099eaefdfa808",
+      "assets/blueprint-exemplo.json": "918dd58821a273a4690c9950794f40ed67f5bafae3c3e8cc9ccf9585b44b241e",
+      "assets/icon.svg": "51a6923974188748638a424aa59b42b6afad2d910f910a1d43bb13ee10f3ce26",
+      "references/adaptation-guide.md": "1e47d290be807f337fb036aba44aa088718b3aa3818e13b9f81e8dcd64aab676",
+      "references/blueprint-contract.md": "3e7065e0f9c0903d45cfdd5055f6a028fe7ceb7a0a6c02c114951a69f7537ba4",
+      "references/hermes-adapter.md": "50538c7632587a2a0dc12cacfde9ce1abfd36488f014862f386b1338f7cd055b",
+      "references/original-workflow.md": "cb486c8d5294c60b48c2e3f5fc5be4b7860034e78f59088b31eb97f4c1dd5541",
+      "references/quality-gates.md": "341c60a45884254b1c77022c0fa6749580c3a5cad46346eeb3cdbafa586769e7",
+      "scripts/architect.py": "bca6b9effe70c428d9c2e0692772db55a55d89c5f70a66e34bb922e5199d7a7f",
+      "scripts/safe_files.py": "7b83cb3e88c7881a261865dc5fc9c36fb661cfab1cbb2af2ad4b5df27cfc07ac",
+      "scripts/scaffold.py": "23fad57ec9fd08aa4aa569181d7bc44a25f7608effe45ebb72332b0cc25fecd4",
+      "scripts/validate_folder.py": "eea8061c3d34674e304fc23dcb42a46ab6ab0492188e4994cebcc6a62ead77d0",
+      "tests/test_scaffold.py": "f905664e9a529c07e4b24dec433a44af3d57f7ea90b7afd78729a5af1a751f32"
+    },
+    "profiles/software-engineer/skills/project-context-architect": {
+      "README.md": "81c11d4a7401e92a38940c59f6ed2fec13b8a4c1f39c27afe8ca4d5e134eb1c6",
+      "SKILL.md": "201701a9790dbf10266b03c577608ba088307747bc8f3cf111bfd36a6f3dbff7",
+      "agents/openai.yaml": "d9a8070a3ad3262959c0251e13b5b29723a861dc520d5c0a748dccc495c63112",
+      "assets/context-example.json": "8c4a80dcde71c8b6832920085feb45e5d0e1ec3eaccb2235c4b8baa233919f13",
+      "references/adoption.md": "d9084ddd913203fc35a7b922a1b088ef4a1817dda221a9dc9a2aef0d6b4b0bc2",
+      "references/context-contract.md": "8b1e282806c80e740e4e10e45b3f506c3ff507af8b1155dcc234876376f1a68c",
+      "scripts/context.py": "6cc084a1056e7b0d2b4aaaf145ef8905106d7d92577c905366ea32ccdd5b6052",
+      "scripts/safe_files.py": "7b83cb3e88c7881a261865dc5fc9c36fb661cfab1cbb2af2ad4b5df27cfc07ac"
+    }
+  },
+  "helper_sha256": "7b83cb3e88c7881a261865dc5fc9c36fb661cfab1cbb2af2ad4b5df27cfc07ac",
+  "schema_version": 1
+}

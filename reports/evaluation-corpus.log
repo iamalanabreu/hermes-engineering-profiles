@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "cases": 78,
+  "scope": "Corpus structure only; no model evaluation executed"
+}

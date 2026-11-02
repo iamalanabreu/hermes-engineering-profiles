@@ -1,0 +1,15 @@
+test_approved_example_requires_source_reference (test_scaffold.TestFolderScaffold.test_approved_example_requires_source_reference) ... ok
+test_dry_run_non_mutating_and_create_validate (test_scaffold.TestFolderScaffold.test_dry_run_non_mutating_and_create_validate) ... ok
+test_expected_files_and_metadata (test_scaffold.TestFolderScaffold.test_expected_files_and_metadata) ... ok
+test_never_overwrite_existing (test_scaffold.TestFolderScaffold.test_never_overwrite_existing) ... ok
+test_optional_agents_file (test_scaffold.TestFolderScaffold.test_optional_agents_file) ... ok
+test_reject_fabricated_approved_example (test_scaffold.TestFolderScaffold.test_reject_fabricated_approved_example) ... ok
+test_reject_missing_objective_checks (test_scaffold.TestFolderScaffold.test_reject_missing_objective_checks) ... ok
+test_reject_path_traversal_and_absolute (test_scaffold.TestFolderScaffold.test_reject_path_traversal_and_absolute) ... ok
+test_reject_private_keys_and_known_tokens (test_scaffold.TestFolderScaffold.test_reject_private_keys_and_known_tokens) ... ok
+test_validator_detects_deleted_required_file (test_scaffold.TestFolderScaffold.test_validator_detects_deleted_required_file) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.060s
+
+OK

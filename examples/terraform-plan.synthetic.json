@@ -1,0 +1,25 @@
+{
+  "format_version": "1.2",
+  "fixture_origin": "synthetic",
+  "resource_changes": [
+    {
+      "address": "sample_database.primary",
+      "change": {
+        "actions": [
+          "delete",
+          "create"
+        ],
+        "before": {
+          "sensitive_value": "SYNTHETIC_DO_NOT_PRINT"
+        },
+        "after": {
+          "sensitive_value": "SYNTHETIC_DO_NOT_PRINT"
+        },
+        "after_unknown": {
+          "id": true
+        }
+      }
+    }
+  ],
+  "output_changes": {}
+}

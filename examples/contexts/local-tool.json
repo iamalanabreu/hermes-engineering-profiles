@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "trust_domain": "synthetic-lab",
+  "data_classification": "synthetic-only",
+  "stack": {},
+  "sources": [
+    {
+      "label": "Synthetic design fixture",
+      "location": "This repository example",
+      "status": "synthetic"
+    }
+  ],
+  "slug": "local-tool",
+  "title": "Local Tool Lab",
+  "purpose": "Design a local file organization tool with preview and no silent overwrite.",
+  "kind": "cli",
+  "scope": [
+    "Define CLI inputs, conflict behavior and a bounded output root.",
+    "Test synthetic files including Unicode and repeated destination names."
+  ],
+  "non_goals": [
+    "No system settings, shell startup edits or cloud service."
+  ],
+  "constraints": [
+    "Preserve input files until the reviewed operation succeeds.",
+    "Qualify each claimed OS separately."
+  ],
+  "acceptance": [
+    "Preview produces no filesystem changes.",
+    "Existing destinations are not overwritten silently."
+  ]
+}

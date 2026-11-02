@@ -1,0 +1,107 @@
+{
+  "version": "1.0",
+  "slug": "aie-provider-qualification",
+  "title": "Provider and tool contract qualification",
+  "description": "Use for the recurring provider and tool contract qualification workflow in an explicitly authorized project. Do not use for one-off explanation or unapproved execution.",
+  "purpose": "Qualify a provider route for an agent workflow using reproducible behavior and failure-mode checks rather than model-name assumptions.",
+  "project_context": "Synthetic reference capability; no customer, production environment or previous approval is implied.",
+  "source_of_truth": "The explicit request and authorized project artifacts; discover their actual locations before execution.",
+  "triggers": [
+    "A request to formalize or repeat this operational workflow."
+  ],
+  "inputs": [
+    {
+      "name": "Workflow contract",
+      "source": "Authorized project specification",
+      "required": true,
+      "validation": "Identify schemas, allowed tools, privacy limits and required outcomes."
+    },
+    {
+      "name": "Candidate configuration",
+      "source": "Reviewed local config or test fixture",
+      "required": true,
+      "validation": "Identify protocol/version and route without copying a secret into this folder."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "verification-report.md",
+      "acceptance": "Contains scope, revision, actual evidence, unresolved risks and a bounded status."
+    }
+  ],
+  "steps": [
+    {
+      "action": "Freeze evaluation cases and acceptance criteria before comparing provider outputs.",
+      "evidence": "Versioned case list including invalid tool arguments and missing credentials."
+    },
+    {
+      "action": "Test deterministic adapters and fake tools before any authorized network call.",
+      "evidence": "Fixture tests labeled synthetic, separate from live integration."
+    },
+    {
+      "action": "Exercise timeout, rate limit, authentication failure, malformed response and uncertain tool completion.",
+      "evidence": "Per-case trace with no uncontrolled retry of side effects."
+    },
+    {
+      "action": "Evaluate privacy and data-residency constraints for fallback, memory and telemetry.",
+      "evidence": "Route allowlist or explicit disabled fallback."
+    },
+    {
+      "action": "Report measured quality, latency and cost only for executed cases and state missing metrics.",
+      "evidence": "Acceptance report with provenance, uncertainty and critical failures."
+    }
+  ],
+  "checks": [
+    {
+      "id": "contract",
+      "criterion": "Malformed tool arguments are rejected before external side effects.",
+      "method": "Run a negative adapter fixture and inspect event log.",
+      "evidence": "Rejected call with zero side effects.",
+      "severity": "critical"
+    },
+    {
+      "id": "uncertain-commit",
+      "criterion": "An uncertain successful tool write is not blindly retried.",
+      "method": "Simulate timeout after commit and inspect idempotency behavior.",
+      "evidence": "Stable operation id and reconciliation result.",
+      "severity": "critical"
+    },
+    {
+      "id": "metrics",
+      "criterion": "Missing latency/cost measurements are not reported as zero.",
+      "method": "Inspect normalized evaluation records.",
+      "evidence": "Null/not-measured fields and measurement provenance.",
+      "severity": "major"
+    }
+  ],
+  "constraints": [
+    "Do not copy credentials, private client facts or unrelated memory into this capability.",
+    "Do not infer authorization from a task description, a role prompt or a passing test.",
+    "Do not invent executed checks, performance metrics or human approvals."
+  ],
+  "approvals": [
+    "Material external side effects, destructive changes, publication and privilege expansion need explicit contextual approval."
+  ],
+  "decisions": [
+    {
+      "when": "Fallback would send data to an unapproved provider",
+      "then": "Refuse fallback and report the blocked route.",
+      "otherwise": "Use only a pre-authorized route after contract verification."
+    }
+  ],
+  "assumptions": [
+    "This is a synthetic reusable example, not a completed production run."
+  ],
+  "pending": [
+    "Bind the workflow to an authorized project and verify its external tool contracts before execution."
+  ],
+  "files": [
+    {
+      "path": "arquivos/report-template.md",
+      "purpose": "Record an evidence-backed report without fabricated defaults.",
+      "origin": "Original synthetic template authored for this boilerplate.",
+      "status": "synthetic",
+      "content": "# Verification report template\n\nThis is a template, not an execution record.\n\n## Scope and revision\nRecord actual scope and revision.\n\n## Executed checks\nFor each check: source, command/method, observed result and evidence location.\n\n## Not tested or blocked\nRecord missing dependencies and why no result is claimed.\n\n## Risk and decision\nDistinguish technical recommendation from human authorization.\n"
+    }
+  ]
+}

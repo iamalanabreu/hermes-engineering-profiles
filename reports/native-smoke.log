@@ -1,0 +1,6 @@
+{
+  "status": "BLOCKED",
+  "reason": "Hermes CLI is not installed/available",
+  "tests_executed": 0,
+  "live_model_calls": 0
+}

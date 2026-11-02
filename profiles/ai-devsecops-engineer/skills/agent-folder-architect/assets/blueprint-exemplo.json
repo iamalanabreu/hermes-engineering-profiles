@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "slug": "revisao-documental-semanal",
+  "title": "Revisão documental semanal",
+  "description": "Usar quando for solicitado revisar semanalmente um conjunto definido de documentos, identificar mudanças verificáveis, apontar pendências e produzir um resumo com fontes rastreáveis.",
+  "purpose": "Produzir um relatório conciso das alterações documentais observadas no período, com referências para os arquivos de origem e indicação explícita do que não pôde ser verificado.",
+  "project_context": "Exemplo genérico de um processo de revisão documental recorrente; adaptar ao repositório concreto antes de executar.",
+  "source_of_truth": "Diretório de documentos autorizado pelo solicitante, confirmado no início de cada execução.",
+  "triggers": [
+    "Solicitação de revisão documental semanal com uma lista delimitada de documentos",
+    "Necessidade de identificar mudanças desde a revisão anterior documentada"
+  ],
+  "inputs": [
+    {
+      "name": "Lista de documentos e caminhos",
+      "source": "Solicitante ou inventário verificado do projeto",
+      "required": true,
+      "validation": "Todos os caminhos existem, estão acessíveis e pertencem ao escopo autorizado"
+    },
+    {
+      "name": "Baseline da revisão anterior",
+      "source": "Relatório anterior versionado no projeto",
+      "required": false,
+      "validation": "Se disponível, conferir referência, data e compatibilidade; caso ausente, marcar primeira revisão"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "resumo-de-revisao.md",
+      "acceptance": "Contém período, documentos inspecionados, alterações com origem e pendências explícitas"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Confirmar o inventário de documentos dentro do escopo autorizado",
+      "evidence": "Lista de caminhos efetivamente inspecionados"
+    },
+    {
+      "action": "Comparar com baseline rastreável, quando existir, e registrar cada diferença observável",
+      "evidence": "Referências de arquivo e diff ou trecho de origem"
+    },
+    {
+      "action": "Produzir o resumo usando o modelo aprovado ou modelo inicial explicitamente não aprovado",
+      "evidence": "Arquivo de relatório gerado com tabela de evidências"
+    },
+    {
+      "action": "Conferir objetivamente as evidências e listar itens não verificados",
+      "evidence": "Checklist final com resultado por critério"
+    }
+  ],
+  "decisions": [
+    {
+      "when": "Não há baseline anterior verificável",
+      "then": "Realizar inventário inicial, sem alegar alteração histórica",
+      "otherwise": "Comparar com a referência anterior documentada"
+    }
+  ],
+  "constraints": [
+    "Nunca inventar alterações, aprovação ou histórico que não estejam no material inspecionado",
+    "Não alterar os documentos de origem durante a revisão",
+    "Não copiar documentos sensíveis para exemplos ou templates"
+  ],
+  "approvals": [
+    "Publicação externa do relatório",
+    "Alteração de documentos mestres"
+  ],
+  "prerequisites": [
+    "Acesso de leitura aos arquivos informados",
+    "Confirmação de período e escopo de documentos"
+  ],
+  "assumptions": [
+    "O exemplo não dispõe de repositório real para verificar caminhos ou modelos históricos"
+  ],
+  "pending": [
+    "Definir o diretório real de documentos e a localização autorizada dos relatórios",
+    "Obter ao menos um exemplo aprovado, caso exista"
+  ],
+  "checks": [
+    {
+      "id": "DOC-01",
+      "criterion": "100% dos documentos listados aparecem no inventário ou em exceções explicadas",
+      "method": "Comparar quantidade e nomes com a lista de entrada",
+      "evidence": "Inventário de arquivos e lista de exceções",
+      "severity": "critical"
+    },
+    {
+      "id": "DOC-02",
+      "criterion": "100% das mudanças descritas possuem referência a uma fonte verificada",
+      "method": "Conferir cada linha de alteração contra documento/diff de origem",
+      "evidence": "Tabela alteração -> caminho/linha ou trecho",
+      "severity": "major"
+    },
+    {
+      "id": "DOC-03",
+      "criterion": "Toda informação não confirmada está explicitamente classificada como pendência",
+      "method": "Revisão da seção de pendências contra o checklist de arquivos",
+      "evidence": "Checklist preenchido com critérios aprovados, reprovados e não executados",
+      "severity": "major"
+    }
+  ],
+  "files": [
+    {
+      "path": "arquivos/modelo-resumo.md",
+      "purpose": "Modelo inicial de saída; requer adaptação e aceite no projeto real",
+      "origin": "Template demonstrativo criado como exemplo, sem aprovação humana",
+      "status": "draft",
+      "content": "# Revisão documental — [PERÍODO]\n\n## Escopo\n- Documentos inspecionados: [LISTA VERIFICADA]\n\n## Alterações comprovadas\n| Documento | Alteração | Evidência verificável |\n|---|---|---|\n| [CAMINHO] | [ALTERAÇÃO OBSERVADA] | [LINK OU TRECHO] |\n\n## Pendências\n- [PENDÊNCIA OU 'NÃO HÁ' APÓS CONFERÊNCIA]\n\n## Estado da validação\n- [CRITÉRIO] — [APROVADO/REPROVADO/NÃO EXECUTADO] — [EVIDÊNCIA]"
+    },
+    {
+      "path": "arquivos/regras-de-triagem.md",
+      "purpose": "Distinguir observações verificáveis de inferências e bloqueios",
+      "origin": "Regras sintéticas e demonstrativas, a validar com o projeto real",
+      "status": "synthetic",
+      "content": "# Regras de triagem\n\n- Uma alteração só é afirmada quando existe versão anterior ou evidência comparável.\n- Sem fonte anterior, classificar como inventário inicial.\n- Toda interpretação não confirmada deve ser identificada como hipótese ou pendência.\n- Não atribuir autores, aprovações ou datas a documentos sem metadados verificáveis."
+    }
+  ]
+}

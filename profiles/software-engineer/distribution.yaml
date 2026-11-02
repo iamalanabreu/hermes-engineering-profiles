@@ -1,0 +1,24 @@
+name: software-engineer
+version: 0.1.0
+description: Turn a real product or engineering need into working, maintainable software with verified
+  behavior. Design, implement, debug, test and evolve complete solutions without unnecessary complexity.
+hermes_requires: '>=0.22.5'
+author: Hermes Engineering Profiles contributors
+license: MIT
+env_requires: []
+distribution_owned:
+- SOUL.md
+- config.yaml
+- distribution.yaml
+- skills/agent-folder-architect
+- skills/project-context-architect
+- skills/swe-codebase-discovery
+- skills/swe-architecture-design
+- skills/swe-vertical-slice-delivery
+- skills/swe-api-data-contracts
+- skills/swe-quality-verification
+- skills/swe-application-security
+- skills/swe-release-maintenance
+- skills/swe-web-experience
+- skills/swe-saas-engineering
+- skills/swe-local-crossplatform

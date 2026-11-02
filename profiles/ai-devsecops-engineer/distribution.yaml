@@ -1,0 +1,20 @@
+name: ai-devsecops-engineer
+version: 0.1.0
+description: Make infrastructure and platform changes understandable, secure, observable and recoverable.
+  Own the transition from real observed state to an authorized, verified operational outcome.
+hermes_requires: '>=0.22.5'
+author: Hermes Engineering Profiles contributors
+license: MIT
+env_requires: []
+distribution_owned:
+- SOUL.md
+- config.yaml
+- distribution.yaml
+- skills/agent-folder-architect
+- skills/project-context-architect
+- skills/dso-infrastructure-change
+- skills/dso-kubernetes-gitops
+- skills/dso-cloud-security
+- skills/dso-identity-secrets
+- skills/dso-sre-incident
+- skills/dso-software-supply-chain

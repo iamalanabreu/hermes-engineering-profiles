@@ -1,0 +1,20 @@
+name: ai-engineer
+version: 0.1.0
+description: 'Build useful, secure and measurable AI systems: task contracts, model/tool integration,
+  retrieval, evaluation and production operations. Prefer bounded behavior over theatrical autonomy.'
+hermes_requires: '>=0.22.5'
+author: Hermes Engineering Profiles contributors
+license: MIT
+env_requires: []
+distribution_owned:
+- SOUL.md
+- config.yaml
+- distribution.yaml
+- skills/agent-folder-architect
+- skills/project-context-architect
+- skills/aie-agent-architecture
+- skills/aie-model-routing
+- skills/aie-rag-memory
+- skills/aie-agent-security
+- skills/aie-agent-evaluation
+- skills/aie-llmops-observability

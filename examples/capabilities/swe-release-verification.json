@@ -1,0 +1,107 @@
+{
+  "version": "1.0",
+  "slug": "swe-release-verification",
+  "title": "Software release verification",
+  "description": "Use for the recurring software release verification workflow in an explicitly authorized project. Do not use for one-off explanation or unapproved execution.",
+  "purpose": "Verify a bounded software release against the actual repository contract, preserving unrelated changes and recording reproducible evidence.",
+  "project_context": "Synthetic reference capability; no customer, production environment or previous approval is implied.",
+  "source_of_truth": "The explicit request and authorized project artifacts; discover their actual locations before execution.",
+  "triggers": [
+    "A request to formalize or repeat this operational workflow."
+  ],
+  "inputs": [
+    {
+      "name": "Release diff",
+      "source": "Authorized repository revision",
+      "required": true,
+      "validation": "Identify base/head and account for modified and untracked files."
+    },
+    {
+      "name": "Acceptance contract",
+      "source": "Issue/specification and repository instructions",
+      "required": true,
+      "validation": "Find actual test/build commands; do not assume a toolchain."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "verification-report.md",
+      "acceptance": "Contains scope, revision, actual evidence, unresolved risks and a bounded status."
+    }
+  ],
+  "steps": [
+    {
+      "action": "Read the relevant code paths and acceptance criteria, then identify the smallest validation scope.",
+      "evidence": "File/revision map tied to the requested change."
+    },
+    {
+      "action": "Run the existing failing reproduction or add a regression test without rewriting unrelated code.",
+      "evidence": "Observed failure or explicitly missing reproduction evidence."
+    },
+    {
+      "action": "Execute relevant unit/integration/build checks with fixtures and scoped permissions.",
+      "evidence": "Actual command outputs and exit statuses; skipped checks remain unverified."
+    },
+    {
+      "action": "Review authorization, data isolation, migration safety and dependency changes as applicable.",
+      "evidence": "Risk findings mapped to changed code and negative tests."
+    },
+    {
+      "action": "Prepare release notes and recovery strategy; do not commit, push or publish without authorization.",
+      "evidence": "Release dossier distinguishing tested behavior from environment assumptions."
+    }
+  ],
+  "checks": [
+    {
+      "id": "regression",
+      "criterion": "The reported defect has an executed regression check.",
+      "method": "Replay the reproduction/test and compare outcomes.",
+      "evidence": "Fail-before/pass-after logs or documented exception.",
+      "severity": "major"
+    },
+    {
+      "id": "scope",
+      "criterion": "Unrelated user changes are not staged or overwritten.",
+      "method": "Compare git status/diff before and after.",
+      "evidence": "Bounded file list with preserved unrelated artifacts.",
+      "severity": "critical"
+    },
+    {
+      "id": "truth",
+      "criterion": "The release is not declared production-ready when required integration tests are unavailable.",
+      "method": "Compare final status against executed-check inventory.",
+      "evidence": "Explicit NOT_TESTED/BLOCKED items and release decision.",
+      "severity": "critical"
+    }
+  ],
+  "constraints": [
+    "Do not copy credentials, private client facts or unrelated memory into this capability.",
+    "Do not infer authorization from a task description, a role prompt or a passing test.",
+    "Do not invent executed checks, performance metrics or human approvals."
+  ],
+  "approvals": [
+    "Material external side effects, destructive changes, publication and privilege expansion need explicit contextual approval."
+  ],
+  "decisions": [
+    {
+      "when": "A migration drops data without recovery evidence",
+      "then": "Block promotion and obtain a tested migration/recovery strategy.",
+      "otherwise": "Continue applicable release checks."
+    }
+  ],
+  "assumptions": [
+    "This is a synthetic reusable example, not a completed production run."
+  ],
+  "pending": [
+    "Bind the workflow to an authorized project and verify its external tool contracts before execution."
+  ],
+  "files": [
+    {
+      "path": "arquivos/report-template.md",
+      "purpose": "Record an evidence-backed report without fabricated defaults.",
+      "origin": "Original synthetic template authored for this boilerplate.",
+      "status": "synthetic",
+      "content": "# Verification report template\n\nThis is a template, not an execution record.\n\n## Scope and revision\nRecord actual scope and revision.\n\n## Executed checks\nFor each check: source, command/method, observed result and evidence location.\n\n## Not tested or blocked\nRecord missing dependencies and why no result is claimed.\n\n## Risk and decision\nDistinguish technical recommendation from human authorization.\n"
+    }
+  ]
+}

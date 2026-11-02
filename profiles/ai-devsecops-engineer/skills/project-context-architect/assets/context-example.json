@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "slug": "sample-service",
+  "title": "Sample Service (synthetic)",
+  "purpose": "Demonstrate portable project context without a chosen framework.",
+  "kind": "service",
+  "trust_domain": "synthetic-training",
+  "data_classification": "synthetic-only",
+  "scope": [
+    "Design one bounded service and prove its acceptance contract."
+  ],
+  "non_goals": [
+    "No production deploy, credentials or real customer data."
+  ],
+  "constraints": [
+    "Prefer the existing project stack when adopting a repository."
+  ],
+  "acceptance": [
+    "A fresh agent can locate scope, constraints and validation requirements."
+  ],
+  "stack": {},
+  "sources": [
+    {
+      "label": "Synthetic fixture",
+      "location": "This specification",
+      "status": "synthetic"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "origin": "synthetic",
+  "results": [
+    {
+      "case_id": "fixture-accepted",
+      "accepted": true,
+      "critical_failures": [],
+      "latency_ms": 120,
+      "cost": 0.01
+    },
+    {
+      "case_id": "fixture-blocked",
+      "accepted": false,
+      "critical_failures": [
+        "forbidden side effect"
+      ],
+      "latency_ms": 200,
+      "cost": 0.02
+    }
+  ]
+}

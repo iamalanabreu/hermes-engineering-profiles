@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-labelledby="tt dd">  <title id="tt">AI Engineering</title>
+  <desc id="dd">Perfil ai-engineer.</desc>
+  <defs>
+    <linearGradient id="gPurple" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#5B21B6"/>
+      <stop offset="0.52" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
+    </linearGradient>
+    <linearGradient id="gDeep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E1065"/>
+      <stop offset="0.70" stop-color="#5B21B6"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="gBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#09070D"/>
+      <stop offset="0.62" stop-color="#17141F"/>
+      <stop offset="1" stop-color="#130A25"/>
+    </linearGradient>
+    <linearGradient id="gRule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.0"/>
+      <stop offset="0.10" stop-color="#C4B5FD" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#5B21B6" stop-opacity="0.0"/>
+    </linearGradient>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5"
+            orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C4B5FD"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="340" fill="url(#gBg)"/>
+  <g transform="translate(868 62) scale(0.34)" opacity="0.11">
+      <path d="M500 92 C528 92 548 108 563 137 L926 874 C947 916 922 952 875 952 H711 L486 494 C468 458 439 458 421 494 L199 952 H42 C-5 952 -29 913 -9 872 L385 137 C401 108 422 92 450 92 Z" fill="#F7F7F5" opacity="1"/>
+      <path d="M446 92 C419 92 398 108 382 137 L-8 872 C-29 913 -5 952 42 952 H202 L514 305 C531 270 510 234 472 234 H410 Z" fill="url(#gPurple)" opacity="1"/>
+      <path d="M150 772 C275 708 377 628 487 553 C561 503 629 502 694 547 C730 572 758 608 783 656 L720 791 C689 741 657 714 617 704 C577 694 540 706 499 733 C401 800 314 872 231 927 C189 955 137 945 111 909 C81 867 96 805 150 772 Z" fill="url(#gDeep)" opacity="1"/>
+      <path d="M183 771 C304 704 398 629 494 565 C550 528 601 522 650 541 C599 536 559 552 516 581 C414 649 322 724 207 790 C173 810 148 839 140 873 C124 830 141 795 183 771 Z" fill="#C4B5FD" opacity="0.25"/>
+  </g>
+  <g transform="translate(974 126) scale(0.146)" opacity="0.8">
+      <path d="M500 92 C528 92 548 108 563 137 L926 874 C947 916 922 952 875 952 H711 L486 494 C468 458 439 458 421 494 L199 952 H42 C-5 952 -29 913 -9 872 L385 137 C401 108 422 92 450 92 Z" fill="#F7F7F5" opacity="1"/>
+      <path d="M446 92 C419 92 398 108 382 137 L-8 872 C-29 913 -5 952 42 952 H202 L514 305 C531 270 510 234 472 234 H410 Z" fill="url(#gPurple)" opacity="1"/>
+      <path d="M150 772 C275 708 377 628 487 553 C561 503 629 502 694 547 C730 572 758 608 783 656 L720 791 C689 741 657 714 617 704 C577 694 540 706 499 733 C401 800 314 872 231 927 C189 955 137 945 111 909 C81 867 96 805 150 772 Z" fill="url(#gDeep)" opacity="1"/>
+      <path d="M183 771 C304 704 398 629 494 565 C550 528 601 522 650 541 C599 536 559 552 516 581 C414 649 322 724 207 790 C173 810 148 839 140 873 C124 830 141 795 183 771 Z" fill="#C4B5FD" opacity="0.25"/>
+  </g>
+  <line x1="72" y1="68" x2="540" y2="68" stroke="url(#gRule)" stroke-width="1"/>
+  <text x="72" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="600" fill="#C4B5FD" text-anchor="start" letter-spacing="1.6">PROFILE 02 / 03  //  8 SKILLS</text>
+  <text x="72" y="142" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="700" fill="#F7F7F5" text-anchor="start" letter-spacing="-1">AI</text>
+  <text x="72" y="192" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="700" fill="#C4B5FD" text-anchor="start" letter-spacing="-1">Engineering</text>
+  <text x="72" y="238" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="400" fill="#CFCADD" text-anchor="start" letter-spacing="0">Agentes, providers, RAG, avaliação e LLMOps.</text>
+  <text x="72" y="264" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="400" fill="#CFCADD" text-anchor="start" letter-spacing="0">Sistemas de IA com guardrails, medição e custo explícito.</text>
+  <line x1="72" y1="288" x2="700" y2="288" stroke="#2A2440" stroke-width="1"/>
+  <text x="72" y="314" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="600" fill="#C4B5FD" text-anchor="start" letter-spacing="0.6">ai-engineer</text>
+  <text x="1128" y="314" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="500" fill="#8F87A6" text-anchor="end" letter-spacing="1.4">AGENTS · RAG · EVALS</text>
+</svg>

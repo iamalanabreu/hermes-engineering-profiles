@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "trust_domain": "synthetic-lab",
+  "data_classification": "synthetic-only",
+  "stack": {},
+  "sources": [
+    {
+      "label": "Synthetic design fixture",
+      "location": "This repository example",
+      "status": "synthetic"
+    }
+  ],
+  "slug": "platform-lab",
+  "title": "Platform Change Lab",
+  "purpose": "Review a declarative platform change before any live mutation.",
+  "kind": "platform",
+  "scope": [
+    "Summarize resource actions and identify destructive transitions.",
+    "Describe identity, dependencies and recovery prerequisites."
+  ],
+  "non_goals": [
+    "No apply, credential changes or real cloud access."
+  ],
+  "constraints": [
+    "Treat the supplied plan as synthetic evidence only.",
+    "Require explicit target and approval before a future real apply."
+  ],
+  "acceptance": [
+    "Every delete/replacement is surfaced.",
+    "No secret-like plan values appear in the summary."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "profiles": 3,
+  "canonical_skills": 24,
+  "installed_skill_copies": 28,
+  "files_checked": 326,
+  "python_files_parsed": 47,
+  "errors": [],
+  "warnings": [
+    "Static validation is not native Hermes runtime qualification.",
+    "Pattern-based secret checks are limited; run a dedicated scanner before publication.",
+    "Live model behavior, provider integration and production permissions require separate evaluation."
+  ]
+}

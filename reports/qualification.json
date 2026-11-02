@@ -1,0 +1,98 @@
+{
+  "dedicated_secret_scanner": {
+    "note": "Only limited repository pattern checks were executed.",
+    "status": "NOT_RUN"
+  },
+  "environment": {
+    "machine": "x86_64",
+    "os": "Linux",
+    "python": "3.13.5"
+  },
+  "generated_at_utc": "2026-11-01T22:51:35.225994+00:00",
+  "github_actions": {
+    "note": "Workflow authored; no remote execution or repository publication.",
+    "status": "NOT_RUN"
+  },
+  "live_model_evaluations": {
+    "calls_made": 0,
+    "cases_defined": 78,
+    "status": "NOT_RUN"
+  },
+  "local_checks": [
+    {
+      "check": "shared-integrity",
+      "command": [
+        "python",
+        "scripts/build_distributions.py"
+      ],
+      "evidence": "shared-integrity.log",
+      "exit_code": 0,
+      "status": "PASS",
+      "tests": null
+    },
+    {
+      "check": "static-validation",
+      "command": [
+        "python",
+        "scripts/validate_distributions.py"
+      ],
+      "evidence": "static-validation.log",
+      "exit_code": 0,
+      "status": "PASS",
+      "tests": null
+    },
+    {
+      "check": "repository-tests",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "evidence": "repository-tests.log",
+      "exit_code": 0,
+      "status": "PASS",
+      "tests": 96
+    },
+    {
+      "check": "original-architect-tests",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "shared-skills/agent-folder-architect/tests",
+        "-v"
+      ],
+      "evidence": "original-architect-tests.log",
+      "exit_code": 0,
+      "status": "PASS",
+      "tests": 10
+    },
+    {
+      "check": "evaluation-corpus",
+      "command": [
+        "python",
+        "scripts/check_evals.py"
+      ],
+      "evidence": "evaluation-corpus.log",
+      "exit_code": 0,
+      "status": "PASS",
+      "tests": null
+    }
+  ],
+  "local_tests_passed": 106,
+  "native_runtime": {
+    "live_model_calls": 0,
+    "reason": "Hermes CLI is not installed/available",
+    "status": "BLOCKED",
+    "tests_executed": 0
+  },
+  "schema_version": 1,
+  "scope": "Local code/contracts/fixtures only. No production qualification, user-machine inspection, or provider integration claim.",
+  "status": "LOCAL_PASS_NATIVE_BLOCKED"
+}

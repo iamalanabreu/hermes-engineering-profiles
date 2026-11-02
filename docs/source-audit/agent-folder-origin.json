@@ -1,0 +1,18 @@
+{
+  "origin": "User-supplied Agent Folder Architect skill",
+  "role": "Original workflow/renderer; adapted entrypoint and safe CLI added",
+  "original_file_sha256": {
+    "README.md": "bcc36f58de2a744dea00997d84b6c5e695fa20ab5dec76bc68af9b9f12a2f23d",
+    "SKILL.md": "cb486c8d5294c60b48c2e3f5fc5be4b7860034e78f59088b31eb97f4c1dd5541",
+    "scripts/scaffold.py": "23fad57ec9fd08aa4aa569181d7bc44a25f7608effe45ebb72332b0cc25fecd4",
+    "scripts/validate_folder.py": "eea8061c3d34674e304fc23dcb42a46ab6ab0492188e4994cebcc6a62ead77d0",
+    "references/quality-gates.md": "341c60a45884254b1c77022c0fa6749580c3a5cad46346eeb3cdbafa586769e7",
+    "references/blueprint-contract.md": "5f91f993e7edeacfe574ac4c72149b1f23a265fc3ecf2940f9fdd3b65da826dd",
+    "references/adaptation-guide.md": "1e47d290be807f337fb036aba44aa088718b3aa3818e13b9f81e8dcd64aab676",
+    "tests/test_scaffold.py": "cb209b2a94a4abd00407ae000ea5a8fd87c3c7971ff70627e2ff93a7b07f7b49",
+    "assets/icon.svg": "51a6923974188748638a424aa59b42b6afad2d910f910a1d43bb13ee10f3ce26",
+    "assets/PROMPT_DE_ACIONAMENTO.md": "6f91fb69f5b32f87d3bdfa1adcb0197dde1adc6b7a27482dda4099eaefdfa808",
+    "assets/blueprint-exemplo.json": "918dd58821a273a4690c9950794f40ed67f5bafae3c3e8cc9ccf9585b44b241e",
+    "agents/openai.yaml": "ae055adb3a21b8918c9dcbea70ddc9f514f2bb83ba6582452d81c4f205e1e5f9"
+  }
+}

@@ -1,0 +1,16 @@
+# Portable baseline; configure model/provider and real permissions per instance.
+# These settings do NOT create a read-only sandbox or approve every possible write.
+approvals:
+  mode: manual
+  cron_mode: deny
+  single_query_mode: deny
+  unattended_mode: deny
+skills:
+  auto_load:
+  - agent-folder-architect
+  write_approval: true
+  project_discovery: true
+  template_vars: true
+  inline_shell: false
+memory:
+  write_approval: true

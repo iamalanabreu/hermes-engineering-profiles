@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "documentary_baseline": "v0.22.5",
+  "inspected_date": "2026-11-01",
+  "source": "https://github.com/NousResearch/hermes-agent",
+  "native_runtime_verified": false,
+  "live_model_evaluated": false,
+  "actions": {
+    "actions/checkout": {
+      "ref": "v4.2.2",
+      "commit": "11bd71901bbe5b1630ceea73d27597364c9af683"
+    },
+    "actions/setup-python": {
+      "ref": "v5.6.0",
+      "commit": "a26af69be951a213d495a4c3e4e4022e16d87065"
+    }
+  },
+  "notes": [
+    "Tag-based documentary contract; no full Hermes runtime vendored.",
+    "Source references are not installed dependencies."
+  ]
+}

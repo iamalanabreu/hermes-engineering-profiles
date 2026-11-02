@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "version": "0.1.0",
+  "hermes_documentation_baseline": "v0.22.5",
+  "shared": [
+    "agent-folder-architect",
+    "project-context-architect"
+  ],
+  "profiles": {
+    "ai-devsecops-engineer": [
+      "dso-infrastructure-change",
+      "dso-kubernetes-gitops",
+      "dso-cloud-security",
+      "dso-identity-secrets",
+      "dso-sre-incident",
+      "dso-software-supply-chain"
+    ],
+    "ai-engineer": [
+      "aie-agent-architecture",
+      "aie-model-routing",
+      "aie-rag-memory",
+      "aie-agent-security",
+      "aie-agent-evaluation",
+      "aie-llmops-observability"
+    ],
+    "software-engineer": [
+      "swe-codebase-discovery",
+      "swe-architecture-design",
+      "swe-vertical-slice-delivery",
+      "swe-api-data-contracts",
+      "swe-quality-verification",
+      "swe-application-security",
+      "swe-release-maintenance",
+      "swe-web-experience",
+      "swe-saas-engineering",
+      "swe-local-crossplatform"
+    ]
+  },
+  "profile_versions": {
+    "ai-devsecops-engineer": "0.1.0",
+    "ai-engineer": "0.1.0",
+    "software-engineer": "0.1.0"
+  }
+}

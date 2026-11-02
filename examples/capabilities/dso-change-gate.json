@@ -1,0 +1,107 @@
+{
+  "version": "1.0",
+  "slug": "dso-change-gate",
+  "title": "Infrastructure change review",
+  "description": "Use for the recurring infrastructure change review workflow in an explicitly authorized project. Do not use for one-off explanation or unapproved execution.",
+  "purpose": "Review recurring infrastructure changes against an authorized scope, saved plan, rollback feasibility and measurable acceptance.",
+  "project_context": "Synthetic reference capability; no customer, production environment or previous approval is implied.",
+  "source_of_truth": "The explicit request and authorized project artifacts; discover their actual locations before execution.",
+  "triggers": [
+    "A request to formalize or repeat this operational workflow."
+  ],
+  "inputs": [
+    {
+      "name": "Change request and ownership",
+      "source": "Requester and authorized project",
+      "required": true,
+      "validation": "Match scope, environment, approval owner and allowed actions."
+    },
+    {
+      "name": "Plan or diff",
+      "source": "Reviewed version-controlled artifact",
+      "required": true,
+      "validation": "Verify exact revision, intended target and that sensitive values are not included in the report."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "verification-report.md",
+      "acceptance": "Contains scope, revision, actual evidence, unresolved risks and a bounded status."
+    }
+  ],
+  "steps": [
+    {
+      "action": "Classify the requested action and inventory source-of-truth documents without changing infrastructure.",
+      "evidence": "Scope record with verified environment identifiers or an explicit unknown status."
+    },
+    {
+      "action": "Inspect additions, replacements, deletions, permissions and data-lifecycle consequences.",
+      "evidence": "Risk register tied to the reviewed diff; no invented impact numbers."
+    },
+    {
+      "action": "Define deployment order, stop conditions, observable acceptance and feasible recovery.",
+      "evidence": "Change plan with responsibility, prerequisites and rollback limits."
+    },
+    {
+      "action": "Request approval for the exact target and revision before any material mutation; review is not authorization to apply.",
+      "evidence": "Approval reference, or BLOCKED if execution was requested without approval."
+    },
+    {
+      "action": "Record only checks actually executed and separate planned checks from verified results.",
+      "evidence": "Evidence table with command, revision, exit/result, timestamp and unresolved items."
+    }
+  ],
+  "checks": [
+    {
+      "id": "destructive-review",
+      "criterion": "Every destructive change has an explicit data/recovery analysis.",
+      "method": "Compare plan actions with the risk table.",
+      "evidence": "A row for each delete/replacement and its acceptance owner.",
+      "severity": "critical"
+    },
+    {
+      "id": "authorization",
+      "criterion": "No production mutation occurs during a review-only request.",
+      "method": "Inspect tool trace or executor logs.",
+      "evidence": "No mutation event; explicitly record unavailable trace.",
+      "severity": "critical"
+    },
+    {
+      "id": "recovery",
+      "criterion": "A rollback plan does not claim to restore data that lacks a verified recovery source.",
+      "method": "Review backup/restore evidence and compensating steps.",
+      "evidence": "Evidence reference or explicit blocked recovery dependency.",
+      "severity": "major"
+    }
+  ],
+  "constraints": [
+    "Do not copy credentials, private client facts or unrelated memory into this capability.",
+    "Do not infer authorization from a task description, a role prompt or a passing test.",
+    "Do not invent executed checks, performance metrics or human approvals."
+  ],
+  "approvals": [
+    "Material external side effects, destructive changes, publication and privilege expansion need explicit contextual approval."
+  ],
+  "decisions": [
+    {
+      "when": "The plan contains resource replacement with persistent data",
+      "then": "Stop approval and obtain a restore/compensation decision backed by evidence.",
+      "otherwise": "Continue risk review; do not auto-apply."
+    }
+  ],
+  "assumptions": [
+    "This is a synthetic reusable example, not a completed production run."
+  ],
+  "pending": [
+    "Bind the workflow to an authorized project and verify its external tool contracts before execution."
+  ],
+  "files": [
+    {
+      "path": "arquivos/report-template.md",
+      "purpose": "Record an evidence-backed report without fabricated defaults.",
+      "origin": "Original synthetic template authored for this boilerplate.",
+      "status": "synthetic",
+      "content": "# Verification report template\n\nThis is a template, not an execution record.\n\n## Scope and revision\nRecord actual scope and revision.\n\n## Executed checks\nFor each check: source, command/method, observed result and evidence location.\n\n## Not tested or blocked\nRecord missing dependencies and why no result is claimed.\n\n## Risk and decision\nDistinguish technical recommendation from human authorization.\n"
+    }
+  ]
+}

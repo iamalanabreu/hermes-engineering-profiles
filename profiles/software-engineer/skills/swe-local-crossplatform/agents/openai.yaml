@@ -1,0 +1,5 @@
+interface:
+  display_name: Swe Local Crossplatform
+  short_description: Versioned engineering procedure with evidence checks
+policy:
+  allow_implicit_invocation: true

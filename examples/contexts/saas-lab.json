@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "trust_domain": "synthetic-lab",
+  "data_classification": "synthetic-only",
+  "stack": {},
+  "sources": [
+    {
+      "label": "Synthetic design fixture",
+      "location": "This repository example",
+      "status": "synthetic"
+    }
+  ],
+  "slug": "saas-lab",
+  "title": "SaaS Lab",
+  "purpose": "Build one end-to-end workspace invitation flow.",
+  "kind": "saas",
+  "scope": [
+    "Model membership, invitation and server-side authorization.",
+    "Use two synthetic tenants to test access boundaries."
+  ],
+  "non_goals": [
+    "No real billing, email delivery, customer data or production deployment."
+  ],
+  "constraints": [
+    "Discover the existing stack before choosing a new one.",
+    "A client-supplied tenant id does not authorize access."
+  ],
+  "acceptance": [
+    "An unauthorized tenant cannot read or accept another tenant invitation.",
+    "The UI and API handle expired and repeated invitations."
+  ]
+}

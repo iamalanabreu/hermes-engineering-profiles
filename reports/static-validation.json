@@ -1,0 +1,17 @@
+{
+  "canonical_skills": 24,
+  "errors": [
+    "'utf-8' codec can't decode byte 0xb0 in position 37: invalid start byte",
+    "Generated skill has local edits or no provenance: profiles/ai-devsecops-engineer/skills/agent-folder-architect"
+  ],
+  "files_checked": 6,
+  "installed_skill_copies": 28,
+  "profiles": 3,
+  "python_files_parsed": 0,
+  "status": "FAIL",
+  "warnings": [
+    "Static validation is not native Hermes runtime qualification.",
+    "Pattern-based secret checks are limited; run a dedicated scanner before publication.",
+    "Live model behavior, provider integration and production permissions require separate evaluation."
+  ]
+}

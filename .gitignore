@@ -1,0 +1,30 @@
+# Local Python/tool state
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+# Credentials and runtime state, at any nesting level
+.env
+.env.*
+!.env.example
+!**/.env.example
+auth.json
+state.db*
+projects.db*
+*.pem
+*.p12
+*.key
+.architect-backups/
+.architect-update.lock
+.architect-create-*.lock
+# Local instance work is never source
+instances/
+local/
+node_modules/
+# Build output (source profiles and qualification reports remain tracked)
+dist/
+
+# macOS resource forks (network volumes create these next to every file)
+._*
+.AppleDouble/

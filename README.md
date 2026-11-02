@@ -197,6 +197,7 @@ python3 assets/readme/audit.py assets/readme   # falha se um conector cruzar tex
 | [QUICKSTART](QUICKSTART.md) | Instalar e validar uma instância nomeada |
 | [CAPABILITY-MAP](docs/CAPABILITY-MAP.md) | Escolher o especialista pela tarefa |
 | [CONTEXT-STRATEGY](docs/CONTEXT-STRATEGY.md) | Adaptar contexto por projeto |
+| [MEMORY-STRATEGY](docs/MEMORY-STRATEGY.md) | Separar memória local de memória operacional |
 | [ARCHITECTURE](docs/ARCHITECTURE.md) | Como as camadas se relacionam |
 | [SECURITY](docs/SECURITY.md) | Modelo de confiança e limites reais |
 | [KNOWN-LIMITS](docs/KNOWN-LIMITS.md) | O que não foi testado |

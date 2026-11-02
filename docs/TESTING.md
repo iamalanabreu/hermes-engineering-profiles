@@ -7,6 +7,29 @@ em HOME descartável. Ausência do Hermes fica BLOCKED no relatório, sem bloque
 os resultados locais. Para exigir runtime nativo, use `--require-native`: seu bloqueio
 retorna código 77. O script não chama modelos nem acessa profiles reais.
 
+## Pré-requisitos de ambiente
+
+A toolchain exige **Python 3.10+** e **PyYAML 6.0.3** (ver `docs/COMPATIBILITY.md`).
+Duas armadilhas aparecem em macOS quando os comandos abaixo rodam fora do venv:
+
+1. **`python3` do sistema é 3.9.** A anotação PEP 604 (`list[dict] | None`) falha no
+   import e o `unittest` reporta apenas `ImportError: Failed to import test module`.
+   Use o interpretador do venv, não o `python3` do PATH.
+2. **`TMPDIR` no macOS aponta para `/var/...`, que é symlink de `/private/var`.**
+   As guardas de segurança do repositório recusam caminhos symlinkados por design, então
+   dezenas de testes falham com `Symlinked path is not an authorized filesystem boundary`.
+   Isso **não** é bug do repositório: passe o caminho real.
+
+Execução reprodutível:
+
+```sh
+export TMPDIR="$(python3 -c 'import tempfile,os;print(os.path.realpath(tempfile.gettempdir()))')"
+.venv/bin/python -m unittest discover -s tests
+.venv/bin/python -m unittest discover -s shared-skills/agent-folder-architect/tests
+```
+
+Estado observado em 2026-11-02 com esse setup: 96 testes OK e 10 testes OK.
+
 ## Camada 1: contratos estáticos
 
 `python3 scripts/validate_distributions.py` verifica manifests, ownership, configuração,

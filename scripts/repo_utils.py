@@ -22,6 +22,9 @@ def files(root:Path):
     for p in sorted(root.rglob('*')):
         rel=p.relative_to(root)
         if any(x in SKIP for x in rel.parts) or p.suffix=='.pyc':continue
+        # macOS AppleDouble sidecars appear next to every file on network volumes
+        # and are not UTF-8; they are never authored source.
+        if p.name.startswith('._') or '.AppleDouble' in rel.parts:continue
         if p.is_symlink():raise ValueError('Symlink in authored tree: '+str(p))
         if p.is_file():yield p
 

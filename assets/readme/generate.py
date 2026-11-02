@@ -311,15 +311,18 @@ def footer():
     w, h = 1200, 132
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-labelledby="ftT ftD">']
     s.append('  <title id="ftT">iam.alan.abreu - DEVSECOPS</title>\n')
-    s.append('  <desc id="ftD">Secure by design. Built to evolve.</desc>\n')
+    s.append('  <desc id="ftD">Secure by design. Built to evolve. iamalanabreu.com</desc>\n')
     s.append(defs())
     s.append(f'  <rect width="{w}" height="{h}" fill="{INK}"/>\n')
     s.append(rule(0, 1, w))
     s.append(symbol(58, 34, 64))
-    s.append(T(142, 62, "iam.alan.abreu", 22, PAPER, "600", ls="0.2"))
-    s.append(T(142, 90, "DEVSECOPS", 18, LAVENDER, "600", "start", MONO, "2.2"))
-    s.append(T(1142, 62, "Secure by design.", 18, "#CFCADD", "500", "end"))
-    s.append(T(1142, 90, "Built to evolve.", 18, LAVENDER, "600", "end"))
+    s.append(T(142, 58, "iam.alan.abreu", 22, PAPER, "600", ls="0.2"))
+    s.append(T(142, 86, "DEVSECOPS", 18, LAVENDER, "600", "start", MONO, "2.2"))
+    # canonical home: the brand site, not a repository
+    s.append(T(142, 112, "iamalanabreu.com", 18, "#9C94B0", "500", "start", MONO, "0.4"))
+    s.append(T(1142, 58, "Secure by design.", 18, "#CFCADD", "500", "end"))
+    s.append(T(1142, 86, "Built to evolve.", 18, LAVENDER, "600", "end"))
+    s.append(T(1142, 112, "Complex systems. Clearly expressed.", 18, "#9C94B0", "500", "end"))
     s.append("</svg>\n")
     return "".join(s)
 

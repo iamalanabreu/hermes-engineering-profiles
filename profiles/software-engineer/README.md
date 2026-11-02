@@ -6,6 +6,12 @@
   <code>distribution.yaml</code> · <code>config.yaml</code> · <code>SOUL.md</code> · 12 skills · v0.1.0
 </p>
 
+<p align="center">
+  <a href="https://www.iamalanabreu.com"><img src="https://img.shields.io/badge/iamalanabreu.com-site-A78BFA?style=flat-square" alt="iamalanabreu.com"></a>
+  <a href="https://www.iamalanabreu.com/architecture"><img src="https://img.shields.io/badge/site-architecture-5B21B6?style=flat-square" alt="Arquitetura"></a>
+  <a href="https://www.iamalanabreu.com/adr"><img src="https://img.shields.io/badge/site-ADRs-17141F?style=flat-square" alt="ADRs"></a>
+</p>
+
 **Turn a real product or engineering need into working, maintainable software with verified
 behavior.** Design, implement, debug, test and evolve complete solutions without unnecessary
 complexity.
@@ -166,3 +172,4 @@ corpus de avaliação de modelo em [`evals/cases.jsonl`](../../evals/cases.jsonl
 - **Not** an official Nous Research release, and **not** a per-profile sandbox.
 
 Baseline Hermes v0.22.5. Full base: [repository README](../../README.md).
+Site: [iamalanabreu.com](https://www.iamalanabreu.com) · [architecture](https://www.iamalanabreu.com/architecture) · [ADRs](https://www.iamalanabreu.com/adr).

@@ -8,6 +8,7 @@
   <a href="reports/QUALIFICATION.md"><img src="https://img.shields.io/badge/qualifica%C3%A7%C3%A3o-evid%C3%AAncia-17141F?style=flat-square" alt="Qualificação"></a>
   <img src="https://img.shields.io/badge/Hermes-v0.22.5-09070D?style=flat-square" alt="Baseline Hermes v0.22.5">
   <img src="https://img.shields.io/badge/licen%C3%A7a-MIT-09070D?style=flat-square" alt="Licença MIT">
+  <a href="https://www.iamalanabreu.com"><img src="https://img.shields.io/badge/iamalanabreu.com-site-A78BFA?style=flat-square" alt="iamalanabreu.com"></a>
 </p>
 
 **Três especialistas independentes sobre uma base versionada.** DevSecOps, AI Engineering e
@@ -202,6 +203,25 @@ python3 assets/readme/audit.py assets/readme   # falha se um conector cruzar tex
 | [UPGRADING](docs/UPGRADING.md) | Atualizar sem perder config |
 | [QUALIFICATION](reports/QUALIFICATION.md) | Evidência do que rodou |
 | [CHANGELOG](CHANGELOG.md) | Histórico de mudanças |
+
+## Onde este trabalho vive
+
+Este repositório é a base; o contexto mais amplo do trabalho está em
+**[iamalanabreu.com](https://www.iamalanabreu.com)** — a mesma identidade `DEVSECOPS`, os mesmos
+tokens, os mesmos princípios editoriais.
+
+| Superfície | Conteúdo |
+|---|---|
+| [iamalanabreu.com](https://www.iamalanabreu.com) | Home: Engineering is a system, APDA, production showcase |
+| [/architecture](https://www.iamalanabreu.com/architecture) | Diagramas de sistema: Internal Developer Platform, Secure Delivery Pipeline |
+| [/adr](https://www.iamalanabreu.com/adr) | Record de decisão arquitetural — ADR-001 a ADR-006 |
+| [/stack](https://www.iamalanabreu.com/stack) | Stack e ferramentas em uso |
+| [/about](https://www.iamalanabreu.com/about) | Perfil profissional |
+| [GitHub @iamalanabreu](https://github.com/iamalanabreu) | Código |
+
+O site e este repositório compartilham a paleta oficial — Ink `#09070D`, Purple 700 `#5B21B6`,
+Purple 500 `#7C3AED`, Lavender `#C4B5FD` — e as assinaturas editoriais
+*Secure by design. Built to evolve.* e *Complex systems. Clearly expressed.*
 
 ---
 

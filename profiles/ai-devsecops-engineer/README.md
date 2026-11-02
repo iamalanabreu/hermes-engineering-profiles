@@ -6,6 +6,12 @@
   <code>distribution.yaml</code> · <code>config.yaml</code> · <code>SOUL.md</code> · 8 skills · v0.1.0
 </p>
 
+<p align="center">
+  <a href="https://www.iamalanabreu.com"><img src="https://img.shields.io/badge/iamalanabreu.com-site-A78BFA?style=flat-square" alt="iamalanabreu.com"></a>
+  <a href="https://www.iamalanabreu.com/architecture"><img src="https://img.shields.io/badge/site-architecture-5B21B6?style=flat-square" alt="Arquitetura"></a>
+  <a href="https://www.iamalanabreu.com/adr"><img src="https://img.shields.io/badge/site-ADRs-17141F?style=flat-square" alt="ADRs"></a>
+</p>
+
 **Make infrastructure and platform changes understandable, secure, observable and recoverable.**
 Own the transition from real observed state to an authorized, verified operational outcome.
 
@@ -142,3 +148,4 @@ answers.
 - **Not** an official Nous Research release.
 
 Baseline Hermes v0.22.5. Full base: [repository README](../../README.md).
+Site: [iamalanabreu.com](https://www.iamalanabreu.com) · [architecture](https://www.iamalanabreu.com/architecture) · [ADRs](https://www.iamalanabreu.com/adr).
